@@ -1,0 +1,251 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: all 2s;
+}
+/* Effect */
+.ex-1-square:hover {
+    background-color: red;
+}
+/* /Effect */
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 2s;
+}
+/* Effect */
+.ex-2-square:active {
+    width: 100%;
+}
+/* /Effect */
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all .8s;
+}
+/* Effect */
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+/* /Effect */
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 1s;
+}
+/* Effect */
+.ex-4-square:hover {
+    background: none;
+}
+/* /Effect */
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: all 1s;
+}
+/* Effect */
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(.5);
+}
+/* /Effect */
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+/* Effect */
+.ex-6-img:hover,
+.ex-7-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-8-img:hover {
+    filter: grayscale(.7);
+    border-radius: 5px;
+}
+
+.ex-7-img, .ex-8-img {
+    transition: all 1s;
+}
+/* /Effect */
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: all 2s;
+}
+/* Effect */
+.ex-9-img:hover {
+    filter: grayscale(.7);
+    border-radius: 15px;
+    transform: scale(1.5);
+}
+/* /Effect */
+
+.ex-10-icon {
+    font-size: 60px;
+}
+/* Effect */
+.ex-10-icon {
+    animation: spinner 1s infinite linear ;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* /Effect */
+
+.ex-11-icon {
+    font-size: 60px;
+}
+/* Effect */
+.ex-11-icon:hover {
+    animation: spinner-o 1s linear;
+}
+@keyframes spinner-o {
+    0% {
+        transform: rotate(0);
+    }
+    70% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+/* /Effect */
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: move-x 2s linear;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-x2 2s linear;
+}
+@keyframes move-x {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+@keyframes move-x2 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation: move 4s linear;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move-2 4s linear;
+}
+@keyframes move {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    20% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    40% {
+        left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+    60% {
+        left: -30px;
+        top: calc(100% - 10px);
+    }
+    80% {
+        left: -30px;
+        top: -10px;
+    }
+}
+@keyframes move-2 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    20% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    40% {
+        right: calc(100% - 30px);
+        bottom: calc(100% - 10px);
+    }
+    60% {
+        bottom: calc(100% - 10px);
+        right: -30px;
+    }
+    80% {
+        right: -30px;
+        bottom: -10px;
+    }
+}
