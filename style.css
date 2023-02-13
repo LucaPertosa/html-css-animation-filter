@@ -89,7 +89,7 @@
 }
 /* Effect */
 .ex-9-img:hover {
-    filter: grayscale(.7);
+    filter: grayscale(.7) sepia(.4);
     border-radius: 15px;
     transform: scale(1.5);
 }
@@ -179,6 +179,7 @@
     }
     50% {
         left: calc(100% - 60px);
+        top: -10px;
     }
     100% {
         left: 10%;
@@ -191,6 +192,7 @@
         right: 20%;
     }
     50% {
+        bottom: -10px;
         right: calc(100% - 60px);
     }
     100% {
