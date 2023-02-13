@@ -73,7 +73,7 @@
 }
 
 .ex-8-img:hover {
-    filter: grayscale(.7);
+    filter: grayscale(.7) sepia(.4);
     border-radius: 5px;
 }
 
